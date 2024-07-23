@@ -1,0 +1,74 @@
+#gameboard
+{
+    width:420px;
+    height: 420px;
+    display: flex;
+    flex-wrap: wrap;
+    /* border: 2px solid black; */
+    padding: 20px;
+    background: #00253e; /* Background to enhance the neon effect */
+    border: 10px solid rgba(72,171,224,1); /* Neon green border color */
+    box-shadow: 0 0 20px rgba(72,171,224,1), 0 0 40px rgba(72,171,224,1), 0 0 60px rgba(72,171,224,1), 0 0 80px rgba(72,171,224,1);
+}
+
+
+.square
+{
+    height: 52px;
+    width: 52px;
+    /* position: relative; */
+}
+.square svg
+{
+    height: 40px;
+    width: 40px;
+    margin: 5px;
+   position:relative;
+   z-index:-9;
+}
+
+path{
+    position:relative;
+    z-index:-10;
+}
+
+
+.piece
+{
+    position:relative;
+    z-index:9;
+   
+}
+.beige
+{
+    /* background-color: rgb(110,110,98); */
+      background-image: url('dark-wood-texture.jpg');
+    background-size: cover;
+}
+
+
+.brown
+{
+    /* background-color: rgb(169,43,43) ; */
+    /* background-image: url('light-wood-texture.jpg');
+    background-size: cover; */
+    background-color: white
+}
+
+.blue
+{
+    fill: transparent;
+    stroke:blue; /* Border color */
+    stroke-width: 30px; /* Border width */
+    color: blue;
+    
+}
+
+.red
+{ 
+    fill: transparent;
+    stroke:rgb(163, 0, 0); /* Border color */
+    stroke-width: 30px; /* Border width */
+    color: rgb(163, 0, 0);
+    
+}
